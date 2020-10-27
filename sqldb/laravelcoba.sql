@@ -59,7 +59,8 @@ CREATE TABLE `mahasiswa` (
 --
 
 INSERT INTO `mahasiswa` (`id`, `nama`, `nim`, `email`, `prodi`, `created_at`, `updated_at`, `users_id`) VALUES
-(1, 'Muhammad Hafizh Andifaisa', '117515070111100', 'hafizhandifaisa@student.ub.ac.id', 'Teknologi Informasi', NULL, NULL, 1);
+(1, 'Muhammad Hafizh Andifaisa', '117515070111100', 'hafizhandifaisa@student.ub.ac.id', 'Teknologi Informasi', NULL, NULL, 1),
+(2, 'Adhitya Aryo Wibowo', '175150700111016', 'adhitya.aryo.aa@gmail.com', 'Teknologi Informasi', NULL, NULL, 2);
 
 -- --------------------------------------------------------
 
@@ -117,8 +118,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Muhammad Hafizh Andifaisa', 'hafizhandifaisa@student.ub.ac.id', NULL, '$2y$10$VuIxrpS9./NRxYkWdwFEzO5sONlRVXyViOR/g.DiDEX/EeOvPIhGy', 'fkXTCDSYAeudo6lpcIHgKox00xitQ1gJpcTejq3rIfRFLoUOrgljcKBqCrwp', '2020-10-24 23:02:56', '2020-10-24 23:02:56');
-
+(1, 'Muhammad Hafizh Andifaisa', 'hafizhandifaisa@student.ub.ac.id', NULL, '$2y$10$VuIxrpS9./NRxYkWdwFEzO5sONlRVXyViOR/g.DiDEX/EeOvPIhGy', 'fkXTCDSYAeudo6lpcIHgKox00xitQ1gJpcTejq3rIfRFLoUOrgljcKBqCrwp', '2020-10-24 23:02:56', '2020-10-24 23:02:56'),
+(2, 'Adhitya Aryo Wibowo', 'adhitya.aryo.aa@gmail.com', NULL, '$2y$10$CPSloXFVokqdJFaQ3oXVcuccqj6fGzSB6rUxisVNwZaYKz419WWuu', 'LwavF9GnH0iJbx59e96WaXg58CVaOPLZRhfzQeEoYsYKORAeDEVenaZ8Yr8O', '2020-10-26 02:53:20', '2020-10-26 02:53:20');
 --
 -- Indexes for dumped tables
 --
