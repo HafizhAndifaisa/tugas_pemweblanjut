@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -23,6 +25,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $userid= Auth::user()->id;
+        $nameofuser = DB::table('mahasiswa')->select('nama')->where('users_id', '=', $userid)->get();
+        // var_dump($userid);
+        var_dump($nameofuser);
+        return view('home', ['nameofuser' => $nameofuser]);
     }
 }
